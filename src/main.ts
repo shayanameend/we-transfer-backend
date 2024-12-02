@@ -1,7 +1,18 @@
-import express from "express"
+import { createServer } from "node:http";
 
-const app = express()
+import express from "express";
+import { Server } from "socket.io";
 
-app.listen(() => {
-  console.log("Server is Listening!")
-})
+const app = express();
+
+const server = createServer(app);
+
+const io = new Server(server);
+
+io.on("connection", () => {
+	console.log("Connected!");
+});
+
+server.listen(() => {
+	console.log("Server is Listening!");
+});

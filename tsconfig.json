@@ -1,10 +1,8 @@
 {
-  "compilerOptions": {
-    "esModuleInterop": true,
-    "paths": {
-      "~/*": [
-        "./src/*"
-      ]
-    }
-  }
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"paths": {
+			"~/*": ["./src/*"]
+		}
+	}
 }

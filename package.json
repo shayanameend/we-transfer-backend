@@ -5,13 +5,19 @@
 	"license": "MIT",
 	"packageManager": "pnpm@9.14.4",
 	"scripts": {
+		"prod:build": "",
+		"prod:start": "",
 		"dev:start": "tsx src/main.ts",
-		"dev:watch": "tsx --watch src/main.ts"
+		"dev:watch": "tsx --watch src/main.ts",
+		"biome:check": "biome check --write",
+		"biome:write": "biome check --write"
 	},
 	"dependencies": {
-		"express": "^4.21.1"
+		"express": "^4.21.1",
+		"socket.io": "^4.8.1"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
 		"@types/express": "^5.0.0",
 		"tsx": "^4.19.2"
 	}
