@@ -1,0 +1,18 @@
+{
+	"name": "we-transfer-backend",
+	"version": "1.0.0",
+	"main": "src/main.ts",
+	"license": "MIT",
+	"packageManager": "pnpm@9.14.4",
+	"scripts": {
+		"dev:start": "tsx src/main.ts",
+		"dev:watch": "tsx --watch src/main.ts"
+	},
+	"dependencies": {
+		"express": "^4.21.1"
+	},
+	"devDependencies": {
+		"@types/express": "^5.0.0",
+		"tsx": "^4.19.2"
+	}
+}
