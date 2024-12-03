@@ -1,24 +1,31 @@
 {
 	"name": "we-transfer-backend",
 	"version": "1.0.0",
-	"main": "src/main.ts",
 	"license": "MIT",
 	"packageManager": "pnpm@9.14.4",
 	"scripts": {
 		"prod:build": "",
 		"prod:start": "",
-		"dev:start": "tsx src/main.ts",
-		"dev:watch": "tsx --watch src/main.ts",
+		"dev:start": "tsx --env-file=.env src/server.ts",
+		"dev:watch": "tsx --watch --env-file=.env src/server.ts",
+		"prisma:generate": "prisma generate",
 		"biome:check": "biome check --write",
 		"biome:write": "biome check --write"
 	},
 	"dependencies": {
+		"@prisma/client": "^6.0.1",
+		"cors": "^2.8.5",
 		"express": "^4.21.1",
-		"socket.io": "^4.8.1"
+		"morgan": "^1.10.0",
+		"socket.io": "^4.8.1",
+		"zod": "^3.23.8"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
+		"@types/cors": "^2.8.17",
 		"@types/express": "^5.0.0",
+		"@types/morgan": "^1.9.9",
+		"prisma": "^6.0.1",
 		"tsx": "^4.19.2"
 	}
 }
