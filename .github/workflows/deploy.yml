@@ -16,6 +16,6 @@ jobs:
     - name: 📂 Sync files via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: https://rushuploads.com
+        server: rushuploads.com
         username: rush31098414_backend@rushuploads.com
         password: DF$4%wQ&C*G8)y
