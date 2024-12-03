@@ -19,3 +19,6 @@ jobs:
         server: rushuploads.com
         username: rush31098414_backend@rushuploads.com
         password: DF$4%wQ&C*G8)y
+        server-dir: public_html/rushuploads.com/rush31098414_backend
+        timeout: 60000
+        log-level: verbose
